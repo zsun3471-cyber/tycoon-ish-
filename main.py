@@ -19,11 +19,15 @@ def typewriter(text, delay = 0.05):
 
 clear_terminal()
 
-shoplist = ["2x Luck", "Iron Pickaxe", "Golden Pickaxe", "Diamond Pickaxe", "Galvanized Square Steel Pickaxe"]
+shoplist = ["2x Luck", "Iron Pickaxe", "Golden Pickaxe", "Diamond Pickaxe", "Galvanized Square Steel Pickaxe."]
 money = 0
 
 while True:
-    mainmenu = input(typewriter("Welcome to the main menu! What would you like to do?\nYou can go mining, shopping for tools, and gamble!!!!111\n"))
+    typewriter("Welcome to the main menu! What would you like to do?\nYou can go mining, shopping for tools, and gamble!!!!111\n")
+    mainmenu = input()
     if mainmenu.lower() == "shop" or "shop" in mainmenu.lower():
         typewriter("Welcome to the shop. You can buy stuff in here! (no way right!!??)")
         typewriter("\nYou can buy: " + ", ".join(shoplist)+ " ")
+        break
+    elif mainmenu.lower() == "mining" or "mining" in mainmenu.lower():
+        
