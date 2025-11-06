@@ -22,6 +22,15 @@ clear_terminal()
 shoplist = ["2x Luck", "Iron Pickaxe", "Golden Pickaxe", "Diamond Pickaxe", "Galvanized Square Steel Pickaxe."]
 money = 0
 
+
+
+
+epstienlist = ["Donald Trump", "Diddy", "Elon Musk", "Stephen Hawking"]
+print(epstienlist)
+epstienlist.clear()
+print(epstienlist)
+
+
 while True:
     typewriter("Welcome to the main menu! What would you like to do?\nYou can go mining, shopping for tools, and gamble!!!!111\n")
     mainmenu = input()
@@ -30,4 +39,6 @@ while True:
         typewriter("\nYou can buy: " + ", ".join(shoplist)+ " ")
         break
     elif mainmenu.lower() == "mining" or "mining" in mainmenu.lower():
-        
+        typewriter('hi')
+
+
